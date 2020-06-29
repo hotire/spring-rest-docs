@@ -12,12 +12,12 @@ import java.util.List;
 public class BaseController {
 
     @GetMapping
-    public ResponseEntity<List<Entity>> entity() {
+    public ResponseEntity<List<Entity>> entities() {
         return ResponseEntity.ok(List.of(Entity.builder().name("hotire").build()));
     }
 
     @GetMapping("/{name}")
-    public ResponseEntity<Entity> ok(final String name) {
+    public ResponseEntity<Entity> entity(final String name) {
         return ResponseEntity.ok(Entity.builder().name(name).build());
     }
 }

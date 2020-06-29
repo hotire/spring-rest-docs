@@ -20,12 +20,9 @@ class BaseControllerTest {
     private MockMvc mockMvc;
 
     @Test
-    void list() throws Exception {
+    void entity() throws Exception {
         mockMvc.perform(RestDocumentationRequestBuilders.get("/base/{name}", "hotire"))
                .andExpect(status().isOk())
                .andDo(document("base", pathParameters(parameterWithName("name").description("The name of entity"))));
     }
-
-
-
 }
