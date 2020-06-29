@@ -1,0 +1,14 @@
+= RESTful Notes API Guide
+:doctype: book
+:icons: font
+:source-highlighter: coderay
+
+[[api]]
+== Base API
+api 에 관련된 설명을 이곳에 적습니다.
+
+include::{snippets}/base/curl-request.adoc[]
+include::{snippets}/base/http-request.adoc[]
+include::{snippets}/base/path-parameters.adoc[]
+include::{snippets}/base/http-response.adoc[]
+include::{snippets}/base/response-fields.adoc[]
